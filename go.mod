@@ -1,1 +1,1 @@
-module github.com/zaddok/goinsta/v3
+module github.com/zaddok/goinsta/v4
