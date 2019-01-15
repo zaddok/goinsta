@@ -89,6 +89,12 @@ func (search *Search) User(user string) (*SearchResult, error) {
 
 	res := &SearchResult{}
 	err = json.Unmarshal(body, res)
+
+	if err != nil {
+		for _, user := range res.Users {
+			user.inst = insta
+		}
+	}
 	return res, err
 }
 
